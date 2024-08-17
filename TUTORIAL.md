@@ -21,8 +21,8 @@ Common Sense
 First Section:
 ### Getting print offset
 Open Binary Ninja and load `/Applications/Roblox.app/Contents/MacOS/RobloxPlayer` (Do not load /Applications/Roblox.app as it is a directory containing the main executable and dependencies!)\
-If you cannot find the RobloxPlayer dylib, run `open /Applications/Roblox.app/Contents/MacOS/` and then drag the RobloxPlayer dylib into Binary Ninja\
-Binary Ninja will start analyzing the RobloxPlayer dylib -> (Status should show `Analysis Phase 1...Analysis/Disassembling (*/*)`)\
+If you cannot find the RobloxPlayer executable, run `open /Applications/Roblox.app/Contents/MacOS/` and then drag the RobloxPlayer executable into Binary Ninja\
+Binary Ninja will start analyzing the RobloxPlayer executable -> (Status should show `Analysis Phase 1...Analysis/Disassembling (*/*)`)\
 If you do **not** see that status, double check if your Roblox is Intel version (again refer to Prerequisites)\
 Open the Strings view:
    - Option 1: Go to the Mac top bar (when Binary Ninja is **focused**), press **View**, and click **Strings**.
