@@ -13,7 +13,7 @@ int main()
         printfunction(type, message);
     };
 
-    delayprint(0, "print", std::chrono::milliseconds(200)); 
+    delayprint(0, "print", std::chrono::milliseconds(200)); // add delay(s)
     delayprint(1, "info", std::chrono::milliseconds(200));  
     delayprint(2, "warn", std::chrono::milliseconds(200));  
     delayprint(3, "error", std::chrono::milliseconds(200));
