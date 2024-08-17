@@ -6,7 +6,10 @@ This tutorial will walk you through the process of making a simple MacOS printsp
 
 ## Prerequisites
 Any IDA that works on MacOS (Binary Ninja preferably) -> `https://binary.ninja/free/`\
-Roblox **INTEL** version -> `curl -s "https://raw.githubusercontent.com/devnorb/MacPrintSploitTutorial/main/intelinstaller.sh" | bash`\
+Roblox **INTEL** version:
+```bash
+curl -s "https://raw.githubusercontent.com/devnorb/MacPrintSploitTutorial/main/intelinstaller.sh" | bash
+```
 VSCode or any IDE -> `https://code.visualstudio.com/Download`\
 Basic knowledge of how Mac works\
 Common Sense
