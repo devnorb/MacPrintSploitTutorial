@@ -13,9 +13,9 @@ int main()
         printfunction(type, message);
     };
 
-    delayprint(0, "print", std::chrono::milliseconds(200)); // Print immediately
-    delayprint(1, "info", std::chrono::milliseconds(200));  // Wait 5 seconds before printing
-    delayprint(2, "warn", std::chrono::milliseconds(200));  // Wait 5 seconds before printing
+    delayprint(0, "print", std::chrono::milliseconds(200)); 
+    delayprint(1, "info", std::chrono::milliseconds(200));  
+    delayprint(2, "warn", std::chrono::milliseconds(200));  
     delayprint(3, "error", std::chrono::milliseconds(200));
 
     return 0;
