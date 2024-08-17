@@ -52,7 +52,7 @@ Compile `main.cpp` using `clang++` (CMake is a bit more complex, so I chose to u
 Wait for it to compile. Afterwards, you should see a printsploit.dylib file in the folder\
 Run this command in the same VSCode terminal:
 ```bash
-DYLD_INSERT_LIBRARIES="./printsploit.dylib" /Applications/Roblox.app/Contents/MacOS/RobloxPlayer`
+DYLD_INSERT_LIBRARIES="./printsploit.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
 ```
 Roblox should launch; join a game and open console\
 It should display the 4 console outputs (print, info, warn, error), and if it doesn't, increase the sleep time by ~5 seconds and it should work.\
