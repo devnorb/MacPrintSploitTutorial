@@ -8,10 +8,15 @@ int main()
     typedef int (*printdef)(int, const char*, ...);
     auto printfunction = reinterpret_cast<printdef>(_dyld_get_image_vmaddr_slide(0) + (uintptr_t)offset);
 
-    printfunction(0, "print"); // white
-    printfunction(1, "info"); // blue -> doesn't have chunkname (like Stack Begin/End)
-    printfunction(2, "warn"); // yellow
-    printfunction(3, "error"); // red -> doesn't have chunkname (like Stack Begin/End)
+    auto delayprint = [&](int type, const char* message, std::chrono::milliseconds delay) {
+        std::this_thread::sleep_for(delay);
+        printfunction(type, message);
+    };
+
+    delayprint(0, "print", std::chrono::milliseconds(200)); // Print immediately
+    delayprint(1, "info", std::chrono::milliseconds(200));  // Wait 5 seconds before printing
+    delayprint(2, "warn", std::chrono::milliseconds(200));  // Wait 5 seconds before printing
+    delayprint(3, "error", std::chrono::milliseconds(200));
 
     return 0;
 }
