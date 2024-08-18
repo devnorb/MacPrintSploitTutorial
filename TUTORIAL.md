@@ -23,10 +23,10 @@ First Section:
 Open Binary Ninja and load `/Applications/Roblox.app/Contents/MacOS/RobloxPlayer` (Do not load /Applications/Roblox.app as it is a directory containing the main executable and dependencies!)\
 If you cannot find the RobloxPlayer executable, run `open /Applications/Roblox.app/Contents/MacOS/` and then drag the RobloxPlayer executable into Binary Ninja\
 Binary Ninja will start analyzing the RobloxPlayer executable -> (Status should show `Analysis Phase 1...Analysis/Disassembling (*/*)`)\
-If you do **not** see that status, double check if your Roblox is Intel version (again refer to Prerequisites)\
 Open the Strings view:
    - Option 1: Go to the Mac top bar (when Binary Ninja is **focused**), press **View**, and click **Strings**.
    - Option 2: Go to the rightmost bar, and click the **quote icon** to open the Strings view. (might be version specific)
+If you do **not** see the analyzing status, double check if your Roblox is Intel version (again refer to Prerequisites) and change the executable type (beside Strings view from Raw to Mach-O)\
 Type in `Current identity is %d` and a search result should pop up.\
 Click the search result -> (If the text is still blue and not pink then wait until it turns pink; should be around 3 minutes)\
 After it is done analyzing the function that contains the string `Current identity is %d`, open the Cross References tab in Binary Ninja (The last button in the leftmost bar of Binary Ninja) and double click the first result.\
