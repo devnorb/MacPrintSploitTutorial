@@ -57,5 +57,5 @@ DYLD_INSERT_LIBRARIES="./printsploit.dylib" /Applications/Roblox.app/Contents/Ma
 Roblox should launch; join a game and open console\
 It should display the 4 console outputs (print, info, warn, error), and if it doesn't, increase the sleep time by ~5 seconds and it should work.\
 -------------------------------------------------------------------------------------------------------------------------------------------\
-If there are any issues, feel free to contact me on Discord (@norby.dev_) or make a issue here on this repository.
+If there are any issues, feel free to contact me on Discord (@norbyv1) or make a issue here on this repository.
 Any improvements or suggestions, make a pull request.
